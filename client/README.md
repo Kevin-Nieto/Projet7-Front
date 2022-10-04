@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# Telecharger le repository Projet7-Back et Projet7-Front
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Une fois les deux repository téléchargé, placez le dossier "client" à l'intertieur du dossier "Projet7-Back-main" là où les dossiers "config" "controllers" ... sont présent.
 
-## Available Scripts
+## Créez un fichier .env dans le dossier "config"
 
-In the project directory, you can run:
+Dans ce fichier, complété les informations suivantes :
 
-### `npm start`
+PORT=XXXX (Le port sur lequel notre serveur écoutera)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+UPLOAD_URL=x\\xx\\xx\\xx\\Projet7-Back-main\\Projet7-Back-main\\client\\public\\uploads\\profil\\ (Votre chemin d'acces jusqu'au dossier "profil")
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+UPLOAD_POST_URL=x\\xx\\xx\\xx\\Projet7-Back-main\\Projet7-Back-main\\client\\public\\uploads\\posts\\ (Votre chemin d'acces jusqu'au dossier "posts")
 
-### `npm test`
+CLIENT_URL=http://localhost:3000
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+DB_USER_PASS=xxxx:xxxxx (votre nom de compte et mot de passe mongoDB au format "Moncompte:Monmotdepasse")
 
-### `npm run build`
+TOKEN_SECRET= xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx (générez un long code aléatoire pour votre token secret)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Ensuite créer un fichier .env dans le dossier "client"
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Dans ce fichier complété l'information suivante :
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+REACT_APP_API_URL=http://localhost:xxxx/ (Rentrez le port de votre server)
 
-### `npm run eject`
+## Ensuite se rendre dans le dossier Projet7-Back-main avec la console / le terminal
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+A l'aide de la commande "cd"
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Une fois dans le dossier, faite un " npm install " pour installer toutes les dépendences
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Vous pouvez lancer le serveur avec la commande "npm start"
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Ouvrez un nouveau terminal / console, et rendez vous dans le dossier "Projet7-Back-main/client" avec la commande "cd"
 
-## Learn More
+Une fois dans le dossier, faite un " npm install " pour installer toutes les dépendences
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Vous pouvez lancer react avec la commande "npm start"
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Une fois votre server et react lancé, avec la commande npm start, vous pouvez utiliser le site !
