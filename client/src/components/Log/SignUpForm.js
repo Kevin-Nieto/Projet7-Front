@@ -49,7 +49,13 @@ const SignUpForm = () => {
             setFormSubmit(true);
           }
         })
-        .catch((err) => console.log(err));
+        .catch((err) => {
+          if (err) {
+            pseudoError.innerHTML = err.response.data.errors.pseudo;
+            emailError.innerHTML = err.response.data.errors.email;
+            passwordError.innerHTML = err.response.data.errors.password;
+          }
+        });
     }
   };
 

@@ -29,7 +29,10 @@ const SignInForm = () => {
         }
       })
       .catch((err) => {
-        console.log(err);
+        if (err) {
+          emailError.innerHTML = err.response.data.errors.email;
+          passwordError.innerHTML = err.response.data.errors.password;
+        }
       });
   };
 
