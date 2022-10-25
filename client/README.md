@@ -14,7 +14,7 @@ UPLOAD_POST_URL=x\\xx\\xx\\xx\\Projet7-Back-main\\Projet7-Back-main\\client\\pub
 
 CLIENT_URL=http://localhost:3000
 
-DB_USER_PASS=xxxx:xxxxx (votre nom de compte et mot de passe mongoDB au format "Moncompte:Monmotdepasse")
+DB_USER_PASS_URL=xxxx:xxxxx@cluster000mongodb.net/data_base_name (votre nom de compte, mot de passe mongoDB, votre cluster et le nom de votre base de donnée)
 
 TOKEN_SECRET= xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx (générez un long code aléatoire pour votre token secret)
 
@@ -22,7 +22,7 @@ TOKEN_SECRET= xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx (gén
 
 Dans ce fichier complété l'information suivante :
 
-REACT_APP_API_URL=http://localhost:xxxx/ (Rentrez le port de votre server)
+REACT_APP_API_URL=http://localhost:xxxx/ (Rentrez le port de votre server, celui que vous avez defini dans l'autre dossier .env "PORT=XXXX")
 
 ## Ensuite se rendre dans le dossier Projet7-Back-main avec la console / le terminal
 
